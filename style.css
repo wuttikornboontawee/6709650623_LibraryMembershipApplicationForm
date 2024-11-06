@@ -2,12 +2,16 @@ h1{
   text-align: center;
 }
 
-legend{
-  text-align: center;
+div {
+  background-color: #D4F6FF;
+  width: auto;
+  border: 15px solid #C6E7FF;
+  padding: 10px;
+  margin: 5px;
 }
 
 fieldset{
-  background-color: rgb(175, 176, 235)
+  background-color: #FBFBFB;
 }
 
 
