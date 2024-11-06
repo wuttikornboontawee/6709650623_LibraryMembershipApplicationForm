@@ -7,15 +7,18 @@
 </head>
 <body>
     <h1>แบบฟอร์มการสมัครสมาชิกห้องสมุด</h1>
+
+    <fieldset>
+      <legend>แบบฟอร์ม</legend>
     <form action="">
       <label>ชื่อ:</label><br>
-      <input type="text" name="ชื่อ" ><br>
+      <input type="text" name="ชื่อ" required ><br><br>
       <label>นามสกุล:</label><br>
-      <input type="text" name="สกุล" ><br>
+      <input type="text" name="สกุล" required ><br><br>
       <label>Firstname:</label><br>
-      <input type="text" name="fname" ><br>
+      <input type="text" name="fname" required ><br><br>
       <label>Lastname:</label><br>
-      <input type="text" name="lname" ><br><br>
+      <input type="text" name="lname" required ><br><br>
       <label>เพศ (gender):</label><br>
       <input type="radio"  name="gender" >
       <label>ชาย</label><br>
@@ -25,7 +28,7 @@
       <label>อื่นๆ (โปรดระบุ)</label>
       <input type="text" name="another" ><br><br>
       <label>รหัสนักศึกษา (student number):</label><br>
-      <input type="text" name="stnumber" ><br>
+      <input type="text" name="stnumber" required ><br><br>
       <label>ประเภทของหนังสือที่สนใจ:</label><br>
       <select id="ประเภทของหนังสือ">
              <option value="นิติ">คณะนิติศาสตร์</option>
@@ -47,9 +50,10 @@
              <option value="สุข">คณะสาธารณสุขศาสตร์</option>
              <option value="เภสัช">คณะเภสัชศาสตร์</option>
              <option value="ศึกษา">คณะวิทยาการเรียนรู้และศึกษาศาสตร์</option>
-    </select><br>
+    </select><br><br>
     <label>ที่อยู่อีเมล (E-mail address):</label>
-      <input type="text" name="email" ><br>
+      <input type="email" name="email"  
+      placeholder="example@gmail.com" required><br><br>
       <label> วันเดือนปีเกิด(birthday):</label><br>
       <input type="date" name="bday" ><br><br>
       <label>ประเภทของหนังสือที่สนใจ:</label><br>
@@ -69,13 +73,18 @@
    <input type="checkbox" name="yes"
   <label> ใช่ (yes)</label><br>
   <input type="checkbox" name="no"
-  <label>ไม่ต้องการ (no)</label><br><br>
+  <label> ไม่ต้องการ (no)</label><br><br>
+  <label for="color">สีบัตรสมาชิก:</label>
+  <input type="color" id="color" name="color"> <br><br>
+  
+  
+
       
       
       <input type="submit" value="Submit">
       
 
     </form> 
-        
+  </fieldset>
 </body>
 </html>
