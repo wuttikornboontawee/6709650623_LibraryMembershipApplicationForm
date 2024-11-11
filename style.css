@@ -2,17 +2,16 @@ h1{
   text-align: center;
 }
 
-div {
-  background-color: #D4F6FF;
-  width: auto;
-  border: 15px solid #C6E7FF;
-  padding: 10px;
-  margin: 5px;
+
+.form-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-fieldset{
-  background-color: #FBFBFB;
-}
+
 
 
 input[type=text], select {
